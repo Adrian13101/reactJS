@@ -1,0 +1,98 @@
+
+export const categories = [
+  { id: "motocross", nombre: "Motocross" },
+  { id: "enduro", nombre: "Enduro" },
+];
+
+export const mockProducts = [
+  {
+    id: "mx-001",
+    nombre: "YZ450F",
+    marca: "Yamaha",
+    categoria: "motocross",
+    cilindrada: 450,
+    motor: "4 tiempos",
+    peso: 108,
+    precio: 15600,
+    stock: 4,
+    anio: 2024,
+    descripcion:
+      "Motocross de 450cc con chasis de aluminio y suspensión KYB totalmente ajustable.",
+    imagen: "/motos/yamaha-yz450f.jpg",
+  },
+  {
+    id: "mx-002",
+    nombre: "450 SX-F",
+    marca: "KTM",
+    categoria: "motocross",
+    cilindrada: 450,
+    motor: "4 tiempos",
+    peso: 102,
+    precio: 17000,
+    stock: 3,
+    anio: 2024,
+    descripcion:
+      "Motor liviano con mapa de encendido seleccionable y chasis de cromo-molibdeno.",
+    imagen: "/motos/ktm-450-sxf.jpg",
+  },
+  {
+    id: "mx-003",
+    nombre: "FC 450",
+    marca: "Husqvarna",
+    categoria: "motocross",
+    cilindrada: 450,
+    motor: "4 tiempos",
+    peso: 103,
+    precio: 16800,
+    stock: 2,
+    anio: 2024,
+    descripcion:
+      "Chasis de bastidor de acero perimetral y subchasis de polímero.",
+    imagen: "/motos/husqvarna-fc450.jpg",
+  },
+  {
+    id: "end-001",
+    nombre: "EC 300",
+    marca: "Gas Gas",
+    categoria: "enduro",
+    cilindrada: 300,
+    motor: "2 tiempos",
+    peso: 101,
+    precio: 15800,
+    stock: 5,
+    anio: 2024,
+    descripcion:
+      "Enduro de 2 tiempos con inyección electrónica y suspensión WP Xplor.",
+    imagen: "/motos/gasgas-ec300.jpg",
+  },
+  {
+    id: "end-002",
+    nombre: "300 EXC",
+    marca: "KTM",
+    categoria: "enduro",
+    cilindrada: 300,
+    motor: "2 tiempos",
+    peso: 99,
+    precio: 16700,
+    stock: 4,
+    anio: 2024,
+    descripcion:
+      "Motor de 2 tiempos con control de mapa y embrague hidráulico.",
+    imagen: "/motos/ktm-300-exc.jpg",
+  },
+  {
+    id: "end-003",
+    nombre: "TE 300",
+    marca: "Husqvarna",
+    categoria: "enduro",
+    cilindrada: 300,
+    motor: "2 tiempos",
+    peso: 98,
+    precio: 16500,
+    stock: 3,
+    anio: 2024,
+    descripcion:
+      "Chasis liviano y motor de gran torque a bajas revoluciones.",
+    imagen: "/motos/husqvarna-te300.jpg",
+  },
+];
