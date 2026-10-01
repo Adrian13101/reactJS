@@ -1,4 +1,23 @@
-# Moto Racing
+<div align="center">
+
+# 🏍️ Moto Racing
+
+**E-commerce de motos de motocross y enduro**
+
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white)
+![React Router](https://img.shields.io/badge/React%20Router-6-CA4245?logo=reactrouter&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firestore-Firebase%2010-FFCA28?logo=firebase&logoColor=black)
+
+</div>
+
+| | |
+| --- | --- |
+| **Proyecto** | Moto Racing — tienda online de motos (SPA con React) |
+| **Autor** | Adrián Márquez | 
+| **Repositorio** | https://github.com/Adrian13101/reactJS |
+| **Stack** | React 18 · React Router 6 · Vite 5 · Cloud Firestore |
+| **Catálogo** | 6 motos: 3 de motocross y 3 de enduro |
 
 E-commerce de motos de **motocross** y **enduro** hecho con React. El usuario puede recorrer el catálogo, ver el detalle de cada moto, armar un carrito de compras y finalizar la compra: la orden queda registrada en **Cloud Firestore** y se le muestra un número de orden.
 
@@ -9,6 +28,7 @@ E-commerce de motos de **motocross** y **enduro** hecho con React. El usuario pu
 1. [Funcionalidades](#1-funcionalidades)
 2. [Tecnologías](#2-tecnologías)
 3. [Instalación y ejecución](#3-instalación-y-ejecución)
+   - [Verificación de instalación desde cero](#verificación-de-instalación-desde-cero)
 4. [Estructura de componentes](#4-estructura-de-componentes)
 5. [Rutas](#5-rutas)
 6. [Context del carrito](#6-context-del-carrito)
@@ -67,8 +87,8 @@ Lo que puede hacer el usuario en la aplicación:
 **1. Clonar el repositorio e instalar dependencias**
 
 ```bash
-git clone <url-del-repositorio>
-cd moto-racing
+git clone https://github.com/Adrian13101/reactJS.git
+cd reactJS
 npm install
 ```
 
@@ -111,6 +131,20 @@ npm run dev
 ```
 
 Abrí la URL que muestra la terminal (por defecto `http://localhost:5173`).
+
+### Verificación de instalación desde cero
+
+Se comprobó el procedimiento partiendo de una copia limpia del repositorio (solo los archivos versionados en Git, sin `node_modules`, sin `.env` y sin `serviceAccountKey.json`), con Node.js 22 y npm 10:
+
+| Paso | Resultado |
+| --- | --- |
+| `npm install` | ✅ Instala las dependencias sin errores |
+| `cp .env.example .env` | ✅ El archivo de ejemplo existe y lista las 6 variables `VITE_FIREBASE_*` |
+| `npm run build` | ✅ Compila correctamente (62 módulos transformados, `dist/` generado) |
+| `npm run dev` | ✅ El servidor arranca en `http://localhost:5173` y responde HTTP 200 |
+| `npm run seed` sin `serviceAccountKey.json` | ✅ Falla con un mensaje claro que indica cómo generar la clave |
+
+> **Alcance de la verificación:** la compilación y el arranque se probaron con valores de prueba en el `.env`. La lectura de `productos` y la escritura de `ordenes` requieren un proyecto de Firebase propio con el `.env` completo y las reglas de la sección 12. Si la conexión falla, la tienda muestra el catálogo local con un aviso.
 
 ### Scripts disponibles
 
